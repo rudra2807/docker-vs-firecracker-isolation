@@ -168,6 +168,13 @@ Or what you can do is use an Alpine-based setup script such as `setup-alpine`).
 
 DNS configuration is intentionally omitted here to keep the demo focused on **isolation**, not full OS provisioning.
 
+### Connecting with SSH (optional):
+You use the SSH key that was downloaded by the `setup.sh`
+
+```bash
+ssh -o StrictHostKeyChecking=false  root@169.254.0.21 -i hello-id_rsa
+```
+
 ---
 
 ### 4. Cleanup
